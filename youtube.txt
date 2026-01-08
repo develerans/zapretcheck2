@@ -1,5 +1,4 @@
 * SUMMARY
-working without bypass
 nfqws2 --payload=tls_client_hello --lua-desync=tcpseg:pos=0,1:ip_id=rnd:repeats=1
 nfqws2 --payload=tls_client_hello --lua-desync=tcpseg:pos=0,midsld:ip_id=rnd:repeats=1
 nfqws2 --payload=tls_client_hello --lua-desync=tcpseg:pos=0,1:ip_id=rnd:repeats=20
@@ -4335,4 +4334,5 @@ nfqws2 --payload=quic_initial --lua-desync=send:ipfrag:ipfrag_pos_udp=64 --lua-d
 nfqws2 --payload=quic_initial --lua-desync=fake:blob=fake_default_quic:repeats=1 --lua-desync=send:ipfrag:ipfrag_pos_udp=8 --lua-desync=drop
 nfqws2 --payload=quic_initial --lua-desync=fake:blob=fake_default_quic:repeats=1 --lua-desync=send:ipfrag:ipfrag_pos_udp=16 --lua-desync=drop
 nfqws2 --payload=quic_initial --lua-desync=fake:blob=fake_default_quic:repeats=1 --lua-desync=send:ipfrag:ipfrag_pos_udp=32 --lua-desync=drop
+
 nfqws2 --payload=quic_initial --lua-desync=fake:blob=fake_default_quic:repeats=1 --lua-desync=send:ipfrag:ipfrag_pos_udp=64 --lua-desync=drop
